@@ -1,10 +1,37 @@
 # 2021-05-15-notion-sdk-js-playground
 
-ref: https://developers.notion.com/reference/get-database
-
 Get https://www.notion.so/yamanoku/d23d73e2e3bc415082fd0ff93c0bcea1
 
-```bash
+## Running Locally
+
+### 1. Setup your local project
+```zsh
+# Clone this repository locally
+git clone https://github.com/yamanoku-playground/2021-05-15-notion-sdk-js-playground.git
+
+# Switch into this project
+cd 2021-05-15-notion-sdk-js-playground
+
+# Install the dependencies
+npm ci
+```
+
+### 2. Set your enviornment variables in a `.env` file
+
+ref: https://developers.notion.com/reference/get-database
+
+```zsh
+touch .env
+```
+
+```zsh
+NOTION_KEY=<your-notion-api-key>
+NOTION_DATABASE_ID=<notion-database-id>
+```
+
+### 3. Run code
+
+```zsh
 $ node notion.js
 {
   object: 'database',
